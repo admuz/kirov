@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Киров в фотографиях</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="viewbox.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<style>
+		pre.prettyprint.prettyprinted{
+			padding: 10px 20px;
+			border: 1px solid #ccc;
+			margin:0 0 40px;
+		}
+		dl{
+			display: block;
+			margin: 5px 0 20px;
+			overflow: hidden;
+		}
+		dl > dt{
+			display: block;
+			clear:left;
+			float:left;
+			min-width: 160px;
+		}
+		dl > dd{
+			display: block;
+			float:left;
+			margin: 0 0 20px 10px;
+		}
+	</style>
+
+</head>
+<body>
+	<header class="jumbotron">
+		<div class="container">
+			<h1><i class="fa fa-camera"></i> Киров в фотографиях</h1>
+			<p>УТб-1302-02-00 | Ерназарова Д.Б. &nbsp;<a href="https://vk.com/noza_nozanin" target="_blank"><i class="fab fa-vk"></i></a></p>
+		</div>
+	</header>
+	<main class="container">
+			<div class="row mb-4">
+				<div align=center class="col mb-2">
+					<a href="images/1.jpg" class="thumbnail" title="Многоэтажный жилой дом" >
+						<img src="images/1t.jpg" alt="" class="img-fluid">
+					</a>
+				</div>
+				<div align=center class="col mb-2">
+					<a href="images/2.jpg" class="thumbnail" title="Старый мост">
+						<img src="images/2t.jpg" alt="" class="img-fluid">
+					</a>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div align=center class="col mb-2">
+					<a href="images/3.jpg" class="thumbnail" title="Вятский Государственный Университет" >
+						<img src="images/3t.jpg" alt="" class="img-fluid">
+					</a>
+				</div>
+				<div align=center class="col mb-2">
+					<a href="images/4.jpg" class="thumbnail" title="Скульптурная композиция &#34;Место встречи&#34;">
+						<img src="images/4t.jpg" alt="" class="img-fluid">
+					</a>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div align=center class="col mb-2">
+					<a href="images/5.jpg" class="thumbnail" title="Парк им. С. М. Кирова" >
+						<img src="images/5t.jpg" alt="" class="img-fluid">
+					</a>
+				</div>
+				<div align=center class="col mb-2">
+					<a href="images/6.jpg" class="thumbnail" title="Парк Победы">
+						<img src="images/6t.jpg" alt="" class="img-fluid">
+					</a>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div align=center class="col mb-2">
+					<a href="images/7.jpg" class="thumbnail" title="Береговая ротонда (Александровский сад)" >
+						<img src="images/7t.jpg" alt="" class="img-fluid">
+					</a>
+				</div>
+				<div align=center class="col mb-2">
+					<a href="images/8.jpg" class="thumbnail" title="река Вятка">
+						<img src="images/8t.jpg" alt="" class="img-fluid">
+					</a>
+				</div>
+			</div>
+			
+	</main>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script src="jquery/jquery.viewbox.min.js"></script>
+	<script>
+		$(function(){
+			
+			$('.thumbnail').viewbox();
+			$('.thumbnail-2').viewbox({fullscreenButton: true});
+
+			(function(){
+				var vb = $('.popup-link').viewbox();
+				$('.popup-open-button').click(function(){
+					vb.trigger('viewbox.open');
+				});
+				$('.close-button').click(function(){
+					vb.trigger('viewbox.close');
+				});
+			})();
+			
+		});
+	</script>
+</body>
+</html>
